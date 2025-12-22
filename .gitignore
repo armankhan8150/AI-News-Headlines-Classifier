@@ -1,0 +1,7 @@
+# Ignore the saved model weights
+model/
+bert-news-classifier/
+results/
+logs/
+__pycache__/
+.venv/
