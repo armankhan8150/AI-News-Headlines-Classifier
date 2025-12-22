@@ -1,9 +1,15 @@
-# News Topic Classifier Using BERT
+# 📰 News Topic Classifier Using BERT
 
-## ■ Objective of the Task
+## 🎯 Objective of the Task
 The primary goal of this project is to fine-tune a pre-trained transformer model to classify news headlines into four distinct categories: World, Sports, Business, and Sci/Tech. Using the **AG News Dataset**, the project demonstrates a full machine learning pipeline from data preprocessing and model training to interactive deployment.
 
-## ■ Methodology / Approach
+## 📊 Dataset
+- **Source:** AG News Dataset (Hugging Face)
+- **Size:** 120,000 training samples, 7,600 test samples
+- **Categories:** 4 balanced classes
+- **Format:** News headlines with corresponding labels
+
+## 🔧 Methodology / Approach
 To achieve high classification accuracy, the following technical approach was implemented:
 
 * **Dataset & Preprocessing**: The project utilizes the **AG News Dataset** from Hugging Face. Headlines were processed using the `BertTokenizer` with a `max_length` of **128**, incorporating truncation and padding to ensure uniform input sizes for the model.
@@ -16,7 +22,7 @@ To achieve high classification accuracy, the following technical approach was im
 * **Evaluation Metrics**: Performance was measured using **Accuracy** and **Weighted F1-score** to ensure balanced classification across all topics.
 * **Deployment**: An interactive "AI News Assistant" was developed using **Streamlit**. This interface allows users to input headlines in real-time and view classification results alongside confidence visualizations powered by **Altair**.
 
-## ■ Key Results or Observations
+## 💡 Key Results or Observations
 The fine-tuning process yielded highly successful results over two training epochs:
 
 | Metric | Epoch 1 | Epoch 2 (Final) |
@@ -25,14 +31,23 @@ The fine-tuning process yielded highly successful results over two training epoc
 | **Validation Loss**| 0.1784 | 0.1911 |
 | **Accuracy** | 94.46% | **94.83%** |
 | **F1-Score** | 0.9446 | **0.9483** |
+| **Training Time** | ~2.5 hours (GPU) |
 
-### Interactive Demo Preview
+### 🚀 Interactive Demo Preview
 ![App Screenshot](assets/image.png)
 
 **Observations:**
 * The model achieved nearly **95% accuracy** in just two epochs, demonstrating the power of BERT for Natural Language Processing tasks.
 * The validation loss remained low and stable relative to the training loss, suggesting that the chosen weight decay and learning rate effectively optimized the model without significant overfitting.
 * The deployment interface successfully provides visual feedback and "soft warnings" when prediction confidence falls below **60%**, helping users interpret the AI's reliability.
+
+## 🛠️ Technologies Used
+- **PyTorch**: Deep learning framework
+- **Hugging Face Transformers**: BERT model and tokenizer
+- **Datasets**: Data loading and preprocessing
+- **Scikit-learn**: Evaluation metrics
+- **Streamlit**: Interactive web deployment
+- **Matplotlib/Seaborn**: Data visualization
 
 ## ■ How to Run
 1.  **Clone the repository**:
@@ -47,3 +62,13 @@ The fine-tuning process yielded highly successful results over two training epoc
     ```bash
     streamlit run app.py
     ```
+
+## 🎓 Skills Demonstrated
+✅ Natural Language Processing with Transformers  
+✅ Transfer Learning and Fine-tuning  
+✅ Model Evaluation and Metrics Analysis  
+✅ Data Preprocessing and Tokenization  
+✅ PyTorch and Hugging Face Ecosystem  
+✅ Model Deployment with Streamlit  
+✅ Data Visualization  
+✅ Git Version Control
