@@ -26,6 +26,9 @@ The fine-tuning process yielded highly successful results over two training epoc
 | **Accuracy** | 94.46% | **94.83%** |
 | **F1-Score** | 0.9446 | **0.9483** |
 
+### Interactive Demo Preview
+![App Screenshot](assets/image.png)
+
 **Observations:**
 * The model achieved nearly **95% accuracy** in just two epochs, demonstrating the power of BERT for Natural Language Processing tasks.
 * The validation loss remained low and stable relative to the training loss, suggesting that the chosen weight decay and learning rate effectively optimized the model without significant overfitting.
