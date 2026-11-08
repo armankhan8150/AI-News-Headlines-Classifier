@@ -79,26 +79,6 @@ Predicted Category + Confidence Score
 
 ---
 
-## Project Structure
-
-```
-├── train.py                # Fine-tuning script (HuggingFace Trainer)
-├── predict.py              # Inference pipeline
-├── app.py                  # Streamlit web interface
-├── model/                  # Saved fine-tuned model weights
-│   ├── config.json
-│   ├── pytorch_model.bin
-│   └── tokenizer/
-├── notebooks/
-│   └── training_analysis.ipynb
-├── requirements.txt
-├── .env.example
-├── LICENSE
-└── README.md
-```
-
----
-
 ## Getting Started
 
 ### Prerequisites
